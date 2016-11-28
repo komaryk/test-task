@@ -1,0 +1,99 @@
+
+.profile
+{
+    display: flex;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid $font-lighter;
+    &-info
+    {
+        display: flex;
+        flex-direction: column;
+
+        padding: 4px 0;
+
+        justify-content: space-between;
+    }
+    &:after
+    {
+        display: table;
+        clear: both;
+        overflow: hidden;
+
+        content: '';
+    }
+    &-img
+    {
+        float: left;
+
+        margin-right: 10px;
+        padding: 5px;
+
+        border: 1px solid $font-lighter;
+        img
+        {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    &-name
+    {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    &-position
+    {
+        font-size: 13px;
+        line-height: 16px;
+    }
+}
+
+.link-group
+{
+    ul
+    {
+        padding-top: 15px;
+    }
+    .link--article
+    {
+        line-height: 26px;
+    }
+}
+
+#datepicker
+{
+    margin-top: 15px;
+    .ui-icon-circle-triangle-e
+    {
+        height: 0;
+
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 11px solid $font-dark;
+        background: none;
+        &:hover
+        {
+            border-left: 11px $brand-lighter solid;
+            background: none;
+        }
+    }
+    .ui-icon-circle-triangle-w
+    {
+        height: 0;
+
+        border-top: 8px solid transparent;
+        border-right: 11px solid $font-dark;
+        border-bottom: 8px solid transparent;
+        background: none;
+        &:hover
+        {
+            border-right: 11px $brand-lighter solid;
+            background: none;
+        }
+    }
+    td .ui-state-hover
+    {
+        background: #ededed;
+    }
+}

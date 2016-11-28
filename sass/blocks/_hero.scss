@@ -1,0 +1,100 @@
+.hero
+{
+    color: $accent;
+    .row
+    {
+        padding-bottom: 20px;
+
+        @include desktop
+        {
+            display: flex;
+
+            align-items: stretch;
+        }
+    }
+}
+
+.slider
+{
+    margin-bottom: 15px;
+    &-container
+    {
+        margin-top: 30px;
+        padding: 15px;
+
+        background-color: $base-lighter;
+    }
+    .slider-item
+    {
+        min-height: 280px;
+        max-height: 300px;
+    }
+    &-nav
+    {
+        margin-bottom: 3px;
+        padding: 0 30px;
+        .slider-item
+        {
+            margin: 0 2.5px;
+        }
+        .slick-next:before
+        {
+            content: '\f054';
+        }
+        .slick-prev:before
+        {
+            content: '\f053';
+        }
+        .slick-next:before,
+        .slick-prev:before
+        {
+            font-family: FontAwesome;
+
+            color: $font-dark;
+        }
+    }
+    &-item
+    {
+        position: relative;
+    }
+    &-caption
+    {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        padding: 10px;
+
+        opacity: .6;
+        background-color: $base-dark;
+    }
+    &-title
+    {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+
+        margin-top: 4px;
+    }
+    &-subtitle
+    {
+        font-size: 14px;
+
+        margin-top: 8px;
+    }
+    &-more
+    {
+        font-size: 14px;
+
+        display: block;
+
+        margin-top: 3px;
+
+        color: $brand-lighter;
+        &:hover
+        {
+            text-decoration: underline;
+        }
+    }
+}

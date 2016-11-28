@@ -1,0 +1,26 @@
+.video
+{
+    width: 360px;
+    height: 240px;
+    margin: 15px 0;
+
+    @include small-desktop
+    {
+        width: 293px;
+        height: 195px;
+    }
+    @include tablet
+    {
+        width: 345px;
+        height: 230px;
+    }
+    @include mobile-small
+    {
+        width: 290px;
+        height: 193px;
+    }
+    &-caption
+    {
+        margin-bottom: 14px;
+    }
+}
